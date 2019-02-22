@@ -43,7 +43,7 @@ import {trigger, state, style, transition, animate, keyframes } from '@angular/a
   ],
 })
 export class AppComponent {
-  state = 'inactive';
+  state:string = 'inactive';
   toggleMove() {
     this.state = (this.state === 'inactive' ? 'active' : 'inactive');
     console.log('Clicked');
